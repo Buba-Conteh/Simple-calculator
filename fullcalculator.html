@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"" href="bootstrap/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border: none;
+        margin: 0;
+    }
+    table tr{
+        margin: 0%;
+    }
+    .table td, .table th {
+        padding: 0;
+        border-top: none;
+    }
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    textarea{
+        resize: none;
+        -ms-text-align-last: right;
+        text-align-last: right;
+        initial-letter-align: right;
+        text-align: right;
+        cursor:all-scroll;
+        
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <div class="alert" id="aler-box"></div>
+        <div class="col-4 offset-sm-3">
+        <div class="card border-primary">
+                <div class="card-header text-light bg-primary"><h3>Simple Calculator</h3></div>
+                <div class="card-body px-3 pr-3">
+                    <form id="form">
+                        <table class="table table-collapse table-condensed">
+                          <textarea class="form-control" id="textarea" placeholder="0" name="" id="" cols="10" rows="2"></textarea>
+                            <tr>
+                               <td><button type="reset" class="form-control">C</button></td>
+                                <td><input type="button" id="divid" value="&#247" class="form-control"></input></td>
+                                <td><input  type="button" id="multiply" value="*" class="form-control"></input></td>
+                                <td><input type="button" id="bracket" value="&#8592;" class="form-control"></input></td>
+                            </tr>
+                            <tr>
+                                <td><input name="one" type="button" id="one" value="1" class="form-control numbs1"></input></td>
+                                <td><input type="button" id="two" value="2"  class="form-control numbs2" placeholder="3"></input></td>
+                                <td><input type="button" value="3" id="three" class="form-control numbs3"></input type="button" ></td>
+                                <td><input type="button" value="-" id="subtract" class="form-control operator"></input type="button" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="4" id="four" class="form-control numbs"></input type="button"></td>
+                                <td><input type="button" value="5"  id="five" class="form-control numbs"></input type="button"></td>
+                                <td><input type="button" value="6" id="six" class="form-control numbs"></input type="button"></td>
+                                <td><input type="button" value="+" id="add" class="form-control operator"></input type="button" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="7" id="seven" class="form-control numbs"></input type="button" value="4"></td>
+                                <td><input type="button" value="8" id="eight" class="form-control numbs"></input type="button"></td>
+                                <td><input type="button" value="9" id="nine" class="form-control numbs"></input type="button" ></td>
+                                <td><input type="button" value="%" id="percentage" class="form-control operator"></input type="button" value="4"></td>
+                            </tr>
+                                
+                            <tr>
+                                
+                                <td colspan="2"><input type="button" value="0" name="equals" class="form-control numbs" id="zero"></td>
+
+                                <td><input type="button" id="decimal" value="." class="form-control"></input type="button" ></td>
+                                <td><input type="button" id="equals" value="=" class="form-control"></input type="button" ></td>
+                            </tr>
+                           
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="calProcessor.js"></script>
+</body>
+</html>
